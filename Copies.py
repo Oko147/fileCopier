@@ -1,7 +1,6 @@
 import PySimpleGUI as sg
 import shutil
 import os
-import socket
 
 
 
