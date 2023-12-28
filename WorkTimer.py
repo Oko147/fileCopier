@@ -12,12 +12,12 @@ def update_time():
 
 
 layout = [
-    [sg.Text(size=(100, 50), font=('Helvetica', 20), key='-DATE-')],
-    [sg.Text(size=(100, 50), font=('Helvetica', 20), key='-TIME-')],
-    [sg.Text(size=(200, 100), font=('Helvetica', 30), justification='center', key='-STOPWATCH-')],
-    [sg.InputText(size=(40, 1), key='-TASK-')],
-    [sg.Button('START', size=(100, 100), button_color=('#fff', '#147147'), key='-START-', disabled=True),
-     sg.Button('STOP', size=(100, 100), button_color=('#fff', '#E60012'), key='-STOP-', disabled=True)]
+    [sg.Text(font=('Helvetica', 20), key='-DATE-')],
+    [sg.Text(font=('Helvetica', 20), key='-TIME-')],
+    [sg.Text(font=('Helvetica', 30), justification='center', key='-STOPWATCH-')],
+    [sg.InputText(key='-TASK-')],
+    [sg.Button('START', button_color=('#fff', '#147147'), key='-START-', disabled=False),
+     sg.Button('STOP', button_color=('#fff', '#E60012'), key='-STOP-', disabled=True)]
 ]
 
 window = sg.Window('Task Timer', layout, finalize=True)
